@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int n = 10; // tamaño del array
+    int arr[n]; // declarar el array
+    int *ptr = arr; // declarar el puntero que apunta al primer elemento del array
+
+    // llenar el array con valores ingresados por el usuario
+    printf("Ingrese %d valores enteros:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // recorrer el array utilizando el puntero y mostrar cada elemento multiplicado por 2
+    printf("Array multiplicado por 2:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", *ptr * 2);
+        ptr++; // avanzar el puntero al siguiente elemento
+    }
+    printf("\n");
+
+    return 0;
+}
