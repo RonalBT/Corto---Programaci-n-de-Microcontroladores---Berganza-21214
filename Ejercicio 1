@@ -4,7 +4,7 @@ int main()
 {
     char* a="Ronal Andrés Berganza Torres";
     int b=21214;
-    printf("El valor de a es %s y el valor de b es %d\n", a, b);
+    printf("Mi nombre es %s y mi número de carnet es %d\n", a, b);
 
     return 0;
 }
